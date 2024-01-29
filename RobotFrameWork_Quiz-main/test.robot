@@ -6,17 +6,17 @@ Suite Setup       Open Browser    http://automationexercise.com   chrome
 
 
 *** Variables ***
-${name}          chekchamp
-${email}         chekchamp@gmail.com   
-${subject}       Subject test
-${message}       message test message test
-${selectedfile}  ${CURDIR}/licking_cat.jpg
+${name}          boss
+${email}         tnkwp2545@gmail.com   
+${subject}       Sj test
+${message}       sawadee
+${selectedfile}  ${CURDIR}/07.jpg
 ${uploadfilepath}    xpath=//input[@type="file"]
 
 
 *** Keywords ***
 
-Click Contact Us Element
+Click contact 
     Click Element       //*[@id="header"]/div/div/div/div[2]/div/ul/li[8]/a
 
 Input name
@@ -45,7 +45,7 @@ Click Home Element
 Contact Us 
    [Documentation]    Test the login functionality with valid credentials
 
-   Click Contact Us Element
+   Click contact 
    Page Should Contain    Get In Touch
 
    Input name                   ${name}
